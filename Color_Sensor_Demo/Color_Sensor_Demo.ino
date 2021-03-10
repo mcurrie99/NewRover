@@ -4,6 +4,7 @@ int out=2;
 int flag=0;
 byte counter=0;
 byte countR=0,countG=0,countB=0;
+//int counterA = 0;
 
 Servo myservo1;
 Servo myservo2;
@@ -90,27 +91,34 @@ void loop()
 {
   TCS();
   while(1);
-    // put your main code here, to run repeatedly:
-  if(running){
+  
+  if(running)
+  {
+//    TCS();
+//    //counterA++;
+//  }
+//  else
+//  {
     myservo1.writeMicroseconds(994);
     myservo2.writeMicroseconds(2014);
-    delay(3000);
-    myservo1.writeMicroseconds(1494);
-    myservo2.writeMicroseconds(1494);
-    delay(1000);
-    myservo1.writeMicroseconds(2014);
-    myservo2.writeMicroseconds(994);
-    delay(3000);
-    myservo1.writeMicroseconds(1494);
-    myservo2.writeMicroseconds(1494);
-    delay(1000);
-    myservo1.writeMicroseconds(994);
-    myservo2.writeMicroseconds(994);
-    delay(3000);
-    myservo1.writeMicroseconds(1494);
-    myservo2.writeMicroseconds(1494);
+//    delay(3000);
+//    myservo1.writeMicroseconds(1494);
+//    myservo2.writeMicroseconds(1494);
+//    delay(1000);
+//    myservo1.writeMicroseconds(2014);
+//    myservo2.writeMicroseconds(994);
+//    delay(3000);
+//    myservo1.writeMicroseconds(1494);
+//    myservo2.writeMicroseconds(1494);
+//    delay(1000);
+//    myservo1.writeMicroseconds(994);
+//    myservo2.writeMicroseconds(994);
+//    delay(3000);
+//    myservo1.writeMicroseconds(1494);
+//    myservo2.writeMicroseconds(1494);
     running = false;
-  }}
+  }
+}
 
 
  
