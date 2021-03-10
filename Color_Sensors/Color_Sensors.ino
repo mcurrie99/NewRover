@@ -14,7 +14,7 @@ void setup()
 }
 void TCS()
 {
-  flag=0;
+  //flag=0;
   digitalWrite(s1,HIGH);
   digitalWrite(s0,HIGH);
   digitalWrite(s2,LOW);
