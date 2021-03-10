@@ -4,7 +4,6 @@ int out=2;
 int flag=0;
 byte counter=0;
 byte countR=0,countG=0,countB=0;
-int useless;
 
 Servo myservo1;
 Servo myservo2;
