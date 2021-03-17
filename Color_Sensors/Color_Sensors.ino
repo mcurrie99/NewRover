@@ -1,8 +1,14 @@
+#include <Servo.h>
+
 int s0=3,s1=4,s2=5,s3=6;
 int out=2;
 int flag=0;
 byte counter=0;
 byte countR=0,countG=0,countB=0;
+
+Servo myServo1;
+Servo myServo;
+
 void setup()
 {
   Serial.begin(9600);
@@ -19,7 +25,7 @@ void TCS()
   digitalWrite(s0,HIGH);
   digitalWrite(s2,LOW);
   digitalWrite(s3,LOW);
-  digitalWrite(7,LOW);
+  digitalWrite(7,HIGH);
   attachInterrupt(digitalPinToInterrupt(2), ISR_INTO, CHANGE);
   timer0_init();
 }

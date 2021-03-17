@@ -90,34 +90,34 @@ ISR(TCA0_OVF_vect)//the timer 2, 10ms interrupt overflow again. Internal overflo
 void loop()
 {
   TCS();
-  while(1);
-  
-  if(running)
-  {
-//    TCS();
-//    //counterA++;
-//  }
-//  else
+//  while(1);
+//  
+//  if(running)
 //  {
-    myservo1.writeMicroseconds(994);
-    myservo2.writeMicroseconds(2014);
-//    delay(3000);
-//    myservo1.writeMicroseconds(1494);
-//    myservo2.writeMicroseconds(1494);
-//    delay(1000);
-//    myservo1.writeMicroseconds(2014);
-//    myservo2.writeMicroseconds(994);
-//    delay(3000);
-//    myservo1.writeMicroseconds(1494);
-//    myservo2.writeMicroseconds(1494);
-//    delay(1000);
+////    TCS();
+////    //counterA++;
+////  }
+////  else
+////  {
 //    myservo1.writeMicroseconds(994);
-//    myservo2.writeMicroseconds(994);
-//    delay(3000);
-//    myservo1.writeMicroseconds(1494);
-//    myservo2.writeMicroseconds(1494);
-    running = false;
-  }
+//    myservo2.writeMicroseconds(2014);
+////    delay(3000);
+////    myservo1.writeMicroseconds(1494);
+////    myservo2.writeMicroseconds(1494);
+////    delay(1000);
+////    myservo1.writeMicroseconds(2014);
+////    myservo2.writeMicroseconds(994);
+////    delay(3000);
+////    myservo1.writeMicroseconds(1494);
+////    myservo2.writeMicroseconds(1494);
+////    delay(1000);
+////    myservo1.writeMicroseconds(994);
+////    myservo2.writeMicroseconds(994);
+////    delay(3000);
+////    myservo1.writeMicroseconds(1494);
+////    myservo2.writeMicroseconds(1494);
+//    running = false;
+//  }
 }
 
 
